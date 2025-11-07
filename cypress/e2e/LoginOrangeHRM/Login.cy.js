@@ -14,6 +14,7 @@ describe('Login Test', () => {
 
     // Verifikasi bahwa URL telah berubah dan menampilkan pesan sukses
     cy.url('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index');
+    cy.get('.oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module').should('contain', 'Dashboard');
   });
 
     it('Gagal Login dengan Username dan Password kosong', () => {

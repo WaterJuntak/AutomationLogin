@@ -1,0 +1,11 @@
+{
+    "validUsername" : "Admin",
+    "validPassword" : "admin123",
+    "invalidUsername" : "@Admin",
+    "invalidPassword" : "admin12%",
+    "blankUsername" : " ",
+    "blankPassword" : " ",
+    "link1" : "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+    "link2" : "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+
+}
