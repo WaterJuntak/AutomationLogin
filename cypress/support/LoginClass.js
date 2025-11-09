@@ -12,8 +12,9 @@ class LoginPage {
         cy.get('[type="submit"]').should('be.visible')
         cy.get('[type="submit"]').click()
     }
-    AssertionLogin(link) {
+    AssertionLogin(link, alert) {
         cy.url(link)
+        cy.contains(alert).should('be.visible')
     }
 }
 

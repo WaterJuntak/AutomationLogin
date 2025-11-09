@@ -1,6 +1,9 @@
 describe('API Automation Test, Data Akses',() => {
     it('List User', () => {
-        cy.request('GET', 'https://reqres.in/api/users?page=2')
+        cy.request({method:'GET', url:'https://reqres.in/api/users?page=2',
+            headers: {
+                'x-api-key' : 'reqres-free-v1'
+            }})
         .then((response) => {
             expect(response.status).to.eq(200)
             expect(response.body).to.have.property('data')

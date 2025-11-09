@@ -7,7 +7,7 @@ describe('Login Test', () => {
     LoginPage.inputUsername(LoginData.validUsername)
     LoginPage.inputPassword(LoginData.validPassword)
     LoginPage.loginButton()
-    LoginPage.AssertionLogin(LoginData.link1)
+    LoginPage.AssertionLogin(LoginData.link1, LoginData.alert1)
   });
 
   it('Gagal Login dengan Username dan Password kosong', () => {
@@ -15,7 +15,7 @@ describe('Login Test', () => {
     LoginPage.inputUsername(LoginData.blankUsername)
     LoginPage.inputPassword(LoginData.blankPassword)
     LoginPage.loginButton()
-    LoginPage.AssertionLogin(LoginData.link2)
+    LoginPage.AssertionLogin(LoginData.link2, LoginData.alert3)
   });
 
   it('Gagal Login dengan Username Invalid', () => {
@@ -23,7 +23,7 @@ describe('Login Test', () => {
     LoginPage.inputUsername(LoginData.invalidUsername)
     LoginPage.inputPassword(LoginData.validPassword)
     LoginPage.loginButton()
-    LoginPage.AssertionLogin(LoginData.link2)
+    LoginPage.AssertionLogin(LoginData.link2, LoginData.alert2)
   });
 
   it('Gagal Login dengan Password Invalid', () => {
@@ -31,7 +31,7 @@ describe('Login Test', () => {
     LoginPage.inputUsername(LoginData.validUsername)
     LoginPage.inputPassword(LoginData.invalidPassword)
     LoginPage.loginButton()
-    LoginPage.AssertionLogin(LoginData.link2)
+    LoginPage.AssertionLogin(LoginData.link2, LoginData.alert2)
   });
 
   it('Gagal Login dengan Username dan Password Invalid', () => {
@@ -39,7 +39,7 @@ describe('Login Test', () => {
     LoginPage.inputUsername(LoginData.invalidUsername)
     LoginPage.inputPassword(LoginData.invalidPassword)
     LoginPage.loginButton()
-    LoginPage.AssertionLogin(LoginData.link2)
+    LoginPage.AssertionLogin(LoginData.link2, LoginData.alert2)
   });
 
   it('Gagal Login dengan Username kosong', () => {
@@ -47,7 +47,7 @@ describe('Login Test', () => {
     LoginPage.inputUsername(LoginData.blankUsername)
     LoginPage.inputPassword(LoginData.validPassword)
     LoginPage.loginButton()
-    LoginPage.AssertionLogin(LoginData.link2)
+    LoginPage.AssertionLogin(LoginData.link2, LoginData.alert3)
   });
 
   it('Gagal Login dengan Password kosong', () => {
@@ -55,7 +55,7 @@ describe('Login Test', () => {
     LoginPage.inputUsername(LoginData.validUsername)
     LoginPage.inputPassword(LoginData.blankPassword)
     LoginPage.loginButton()
-    LoginPage.AssertionLogin(LoginData.link2)
+    LoginPage.AssertionLogin(LoginData.link2, LoginData.alert3)
   });
 
   it('Gagal Login dengan Username kosong Password Invalid', () => {
@@ -63,7 +63,7 @@ describe('Login Test', () => {
     LoginPage.inputUsername(LoginData.blankUsername)
     LoginPage.inputPassword(LoginData.invalidPassword)
     LoginPage.loginButton()
-    LoginPage.AssertionLogin(LoginData.link2)
+    LoginPage.AssertionLogin(LoginData.link2, LoginData.alert3)
   });
 
   it('Gagal Login dengan Password kosong dan Username Invalid', () => {
@@ -71,7 +71,6 @@ describe('Login Test', () => {
     LoginPage.inputUsername(LoginData.validUsername)
     LoginPage.inputPassword(LoginData.blankPassword)
     LoginPage.loginButton()
-    LoginPage.AssertionLogin(LoginData.link2)
+    LoginPage.AssertionLogin(LoginData.link2, LoginData.alert3)
   });
-
 });

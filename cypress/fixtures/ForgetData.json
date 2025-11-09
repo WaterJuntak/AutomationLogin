@@ -1,0 +1,15 @@
+{
+    "validUsername" : "Admin",
+    "invalidUsername" : "Fatma",
+    "blankUsername" : " ",
+    
+    "link1" : "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+    "link2" : "https://opensource-demo.orangehrmlive.com/web/index.php/auth/requestPasswordResetCode",
+    "link3" : "https://opensource-demo.orangehrmlive.com/web/index.php/auth/sendPasswordReset",
+    "link4" : "https://opensource-demo.orangehrmlive.com/web/index.php/core/i18n/messages",
+    "link5" : "https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/dashboard/employees/subunit",
+
+    "alert1" : "Login",
+    "alert2" : "Required",
+    "alert3" : "Reset Password link sent successfully"
+}

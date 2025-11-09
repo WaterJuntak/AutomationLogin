@@ -1,0 +1,20 @@
+{
+    "validUsername" : "Admin",
+    "validPassword" : "admin123",
+    "invalidUsername" : "@Admin",
+    "invalidPassword" : "admin12%",
+    "blankUsername" : " ",
+    "blankPassword" : " ",
+    
+    "link1" : "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+    "link2" : "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+    "link3" : "https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/dashboard/employees/leaves?date=2025-11-04",
+    "link4" : "https://opensource-demo.orangehrmlive.com/web/index.php/core/i18n/messages",
+    "link5" : "https://opensource-demo.orangehrmlive.com/web/index.php/auth/validate",
+    "link6" : "https://opensource-demo.orangehrmlive.com/web/index.php/auth/requestPasswordResetCode",
+
+    "alert1" : "Dashboard",
+    "alert2" : "Invalid credentials",
+    "alert3" : "Required",
+    "alert4" : "Reset Password"
+}
